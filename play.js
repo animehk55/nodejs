@@ -43,4 +43,8 @@ const SummariseNNNNNNEW = (userName, userAge, userHasHobby)  => {
   }
   
 
+  //small function
+  
+
+
 console.log(SummariseNNNNNNEW(name, age, hasHobbies));
