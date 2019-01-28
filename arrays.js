@@ -28,6 +28,6 @@
 // ---------
 
 const name = ['Anmesh', 'Shyam', 'Mohan', 'Rohit'];
-console.log(name.)
+console.log(name. )
 
 console.log(name);

@@ -18,7 +18,10 @@ Versatule Language:
     Runs in browser & directly on a PC/server
     Can perform a broad variety of tasks.
 ----------------------------------------------------------------------------------------------
+template literals : `Another way of writing strings`
 
+With that syntax, you can dynamically add data into a string like this:
+console.log(`My name is ${name} and I am ${age} years old.`);
 ----------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------
