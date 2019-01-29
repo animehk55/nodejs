@@ -23,19 +23,31 @@ template literals : `Another way of writing strings`
 With that syntax, you can dynamically add data into a string like this:
 console.log(`My name is ${name} and I am ${age} years old.`);
 ----------------------------------------------------------------------------------------------
-
+Program lifecycle and Event Loop : 
+* Node.js runs non-blocking JS code and uses an event-driven code ("Event Loop") for running your logic.
+* A node program exits as soon as there is no more work to do.
+* NOTE : The createServer() event never finishes by default.
 ----------------------------------------------------------------------------------------------
-
+Nodejs and core Modules : 
+* Node.js ships with multiple core modules (http, fs, path, ....)
+* Core modules can be imported into any file to be used there.
+* Import file to be used there.
+* Import via require('module')
 ----------------------------------------------------------------------------------------------
-
+The Node Module System : 
+* Import via require('./path-to-file') for custom files or require('module) for core and third-party modules    
+* Export via module.exports or just exports (for multiple exports)
 ----------------------------------------------------------------------------------------------
-
+Asynchronous Code : 
+* JS code is non-blocking* Use callbacks and events => Order changes
 ----------------------------------------------------------------------------------------------
-
+Request and Responses : 
+* Parse request data in chunks (Streams and Buffers)
+* Avoid "double responses"
 ----------------------------------------------------------------------------------------------
-
+https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/
 ----------------------------------------------------------------------------------------------
-
+https://nodejs.org/en/docs/guides/dont-block-the-event-loop/
 ----------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------

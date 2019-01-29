@@ -18,7 +18,7 @@ const requestHandler = (req, res) => {
         });
         req.on('end',() => {
             const parsedBody = Buffer.concat(body).toString();
-            const message = parsedBody.split('=')[1];
+            const message = parsedBody.split('=')[0];
             fs.writeFileSync('message.txt', message);
             res.statusCode = 302;
             res.setHeader('Location', '/');
@@ -33,7 +33,6 @@ const requestHandler = (req, res) => {
     res.write('</html>');
     res.end();
 }
-
 
 // module.exports = {
 //     handler: requestHandler,
