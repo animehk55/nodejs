@@ -51,7 +51,31 @@ https://nodejs.org/en/docs/guides/dont-block-the-event-loop/
 ----------------------------------------------------------------------------------------------
 Express js all about middleware.
 ----------------------------------------------------------------------------------------------
-
+What is Express.js? : 
+* Express.js is Node.js framework - a ackage that adds a bunch of utility functions and 
+  tools and a clear set of rules on how the app should be built (middleware).
+* It's highly extensible and other packages can be plugged into it (middleware)
+----------------------------------------------------------------------------------------------
+Routing : 
+* You can filter request by path and method.
+* If you filter by method, paths are matched exactly, otherwise, the first segment of a URL is matched.
+* You can use the express. Router to split your routes across files elegantly.
+----------------------------------------------------------------------------------------------
+Middleware, next() and rest()
+* Express.js relies heavily on middleware functions - you can easily add them by calling use()
+* Middleware functions handle a request and should call next() to forward the request to the next 
+function in line or send a response.
+----------------------------------------------------------------------------------------------
+Server Files 
+* You're not limited to server dummy text as a response.
+You can sendFile()s to your users - e.g. HTML files
+* If a request is directly made for a file (e.g. a .css file is requested), 
+you can enable static serving for such files via express.static()
+----------------------------------------------------------------------------------------------
+Available Templetting Engines:
+EJS     : <p><%= name %></p>        : Use normal HTML and plain Javascript in your templates.
+Pug (Jade)  : p #{name}     : Use minimal HTML and custom template language.
+Handlebars  : <p>{{ name }}</p>     : Use normal HTML and custom template language.
 ----------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------
